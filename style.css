@@ -1,0 +1,80 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+html {
+    scroll-behavior: smooth;
+  }
+.container {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+/** Button Code **/
+
+.button {
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  display: block;
+  position: relative;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #444;
+  margin-left: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 10;
+  color: #333;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:after {
+    position: absolute !important;
+  content: "";
+  width: 56px;
+  height: 56px;
+  display: block;
+  position: relative;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  right: 8px;
+  top: 8px;
+  background-color: #333;
+  visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 1\9;
+  visibility: visible\9;
+  display: none\9;
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  z-index: -1;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button:hover:after {
+  visibility: visible;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  display: block\9;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
