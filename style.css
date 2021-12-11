@@ -2,12 +2,51 @@
 html {
     scroll-behavior: smooth;
   }
+body{
+  
+}
+@media screen and (max-width: 600px) {
+  p.text {
+    font-size: 100000px;
+  }
+}
 .container {
   position: absolute;
   top: 10%;
   width: 100%;
   text-align: center;
+  justify-content: center;
+  margin: auto;
+  background-color: black;
+  color: #f8f8f8;
 }
+span{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-style: italic;
+}
+/**HEADING**/
+.seven h1 {
+  text-align: center;
+      font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+      text-transform: uppercase;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .seven h1:after,.seven h1:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #c50000;
+      border-top: 1px solid #c50000;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  
 
 /** Button Code **/
 
@@ -20,7 +59,6 @@ html {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 2px solid #444;
   margin-left: 10px;
   text-align: center;
   display: inline-block;
@@ -44,6 +82,7 @@ html {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  border: #333;
   right: 8px;
   top: 8px;
   background-color: #333;
@@ -73,8 +112,58 @@ html {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   display: block\9;
+  border: #333;
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
+/*HEADING MAIN*/
+/* Style 9
+   ----------------------------- */
+   .nine h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .nine h1 span {
+    margin-top: 5px;
+      font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine h1 span:after,.nine h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  /*button*/
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(226, 224, 224,0.1); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-style: italic;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(226, 224, 224,0.1);/* Add a dark-grey background on hover */
+
+  }

@@ -2,26 +2,125 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body>
-        <div class="container">
-            <a href="#GEO" class="button"><img style="width: 50px;" src="Images/mountain.png"></a>
-            <a href="#soil" class="button"><img style="width: 50px;" src="Images/soil.png"></a>
-            <a href="#RIVER" class="button"><img style="width: 50px; top: 5px; position: relative;" src="Images/river.png"></a>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50px" src="icons/up-arrow.png"></button>
+        <!-------------------------------BUTTONS---------------------------------->
+
+        <div class="container-fluid" style="text-align: center;">
+            <div class="row" style="text-align: center;">
+                <a href="#SOIL" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/soil (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: rgb(116, 26, 26);">SOILMAP</span></a>
+                <a href="#LANDUSE" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/land (1).png"><span style="position: relative; bottom: 35px; color: burlywood;">LANDUSE</span></a>
+                <a href="#GEO" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/earth (1).png"><span style="position: relative; bottom: 35px; color: orange;">GEOLOGY</span></a>
+                <a style="position:relative; left:20px" href="#LAMINANT" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/tectonic-plates (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: brown;">LAMINANTS</span></a>
+            </div>
         </div>
-        <div class="container">
-            <div class="soilMap">
-                <h1 id="soil">SOIL MAP</h1>
-                <img src="Images/SoilMap.PNG">
+        <div class="container-fluid" style="text-align: center; margin-top: 20px;">
+            <div class="row" style="text-align: center;">
+                <a href="#ELEVATION" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/contour (1).png"><span style="position: relative; bottom: 35px; right: 10px; color: black;">ELEVATION</span></a>
+                <a href="#SLOPE" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/mountains.png"><span style="position: relative; bottom: 35px; color: rgb(167, 161, 151);">SLOPE</span></a>
+                <a href="#AREA" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/area (1).png"><span style="position: relative; bottom: 35px; color: brown;">AREA</span></a>
+                <a style="position: relative; left: 20px;" href="#GROUNDWATER" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/farming.png"><span style="position: relative; bottom: 35px; right: 13px; color: rgb(38, 172, 206);">GROUNDWATER</span></a>
             </div>
-            <div>
-                <h1 id="GEO">GEOLOGY MAP</h1>
-                <img src="Images/Geo.PNG">
+        </div>
+
+        <!-------------------------------HEADING---------------------------------->
+        <div style="margin-top: 100px;" class="nine">
+            <h1>GROUND WATER POTENTIAL ANALYSIS<span>PUNJAB PROVINCE</span></h1>
+        </div>
+
+        <!-------------------------------MAPS------------------------------------->
+        <div class="container-fluid" style="height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="SOIL">SOIL MAP</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="Images/SoilMap.PNG">
+                <p class="col-md-6 col-sm-12">Good soil structure contributes to soil and plant health allowing water and air movement into and through the soil profile. Soil stores water for plant growth and supports machine and animal traffic.
+
+                    While some soils are naturally better structured than others, some physical characteristics of soils can be changed with good management.
+                    
+                    It is important to monitor the physical characteristics of soil to understand soil condition.
+                    
+                    It is also important to ensure that management practices are not contributing to the decline of the soil. An example of this is excessive traffic causing compaction and reducing the amount of macropores, or spaces between the aggregates, therefore reducing the amount of air and water into and through the soil.</p>
             </div>
-            <div>
-                <h1 id="RIVER">PUNJAB RIVER MAP</h1>
-                <img src="Images/riverMap.PNG">
+        </div>
+        <div class="container-fluid" style="height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="GEO">PUNJAB GEOLOGY</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="Images/Geo.PNG">
+                <p class="col-md-6 col-sm-12">Punjab is Pakistan's second largest province by area 
+                    after Balochistan with an area of 205,344 square kilometres (79,284 square miles).
+                    It occupies 25.8% of the total landmass of Pakistan.
+                    Punjab province is bordered by Sindh to the south, the province of Balochistan to
+                     the southwest, the province of Khyber Pakhtunkhwa to the west, and the Islamabad Capital 
+                     Territory and Azad Kashmir in the north. Punjab borders Jammu and Kashmir in the north, 
+                     and the Indian states of Punjab and Rajasthan to the east.</p>
+            </div>
+        </div>
+        <div class="container-fluid" style="height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="ELEVATION">ELEVATION</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="Images/Elevation.PNG">
+                <p class="col-md-6 col-sm-12"></p>
+            </div>
+        </div>
+        <div class="container-fluid" style="height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="SLOPE">SLOPE</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="Images/Slope.PNG">
+                <p class="col-md-6 col-sm-12"></p>
+            </div>
+        </div>
+        <div class="container-fluid" style="height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="LAMINANT">LAMINANT DENSITY</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="Images/Laminant.PNG">
+                <p class="col-md-6 col-sm-12"></p>
+            </div>
+        </div>
+        <div class="container-fluid" style="height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="LANDUSE">LANDUSE/LANDCOVER</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="Images/landuse.PNG">
+                <p class="col-md-6 col-sm-12"></p>
             </div>
         </div>
     </body>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </html>
+
+    
+    
+    
