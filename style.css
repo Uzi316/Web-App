@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
   }
 body{
-  background-color: black !important;
+
 }
 @media screen and (max-width: 600px) {
   p.text {
