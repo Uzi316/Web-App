@@ -13,30 +13,125 @@
                 <a href="#SOIL" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/soil (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: rgb(116, 26, 26);">SOILMAP</span></a>
                 <a href="#LANDUSE" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/land (1).png"><span style="position: relative; bottom: 35px; color: burlywood;">LANDUSE</span></a>
                 <a href="#GEO" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/earth (1).png"><span style="position: relative; bottom: 35px; color: orange;">GEOLOGY</span></a>
-                <a style="position:relative; left:20px" href="#LAMINANT" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/tectonic-plates (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: brown;">LAMINANTS</span></a>
+                <a style="position:relative; left:20px" href="#LAMINANT" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/tectonic-plates (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: brown;">LINEAMENT</span></a>
             </div>
         </div>
         <div class="container-fluid" style="text-align: center; margin-top: 20px;">
             <div class="row" style="text-align: center;">
                 <a href="#ELEVATION" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/contour (1).png"><span style="position: relative; bottom: 35px; right: 10px; color: rgb(252, 252, 252);">ELEVATION</span></a>
                 <a href="#SLOPE" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/mountains.png"><span style="position: relative; bottom: 35px; color: rgb(167, 161, 151);">SLOPE</span></a>
-                <a href="#AREA" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/area (1).png"><span style="position: relative; bottom: 35px; color: brown;">AREA</span></a>
+                <a href="#AOI" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/area (1).png"><span style="position: relative; bottom: 35px; color: brown;">AREA</span></a>
                 <a style="position: relative; left: 20px;" href="#GROUNDWATER" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/farming.png"><span style="position: relative; bottom: 35px; right: 13px; color: rgb(38, 172, 206);">GROUNDWATER</span></a>
             </div>
         </div>
 
         <!-------------------------------HEADING---------------------------------->
         <div style="margin-top: 100px;" class="nine">
-            <h1>GROUND WATER POTENTIAL ANALYSIS<span>PUNJAB PROVINCE</span></h1>
+            <h1>Identification of Groundwater Potential Zones using GIS/Remote Sensing Techniques and AHP</h1>
         </div>
-
+        <div class="seven col-sm-12" style="margin-top: 10px;">
+            <h1 id="ABSTRACT">ABSTRACT</h1>
+        </div>
+        <p>
+        In Punjab (Pakistan), the increasing population and expansion of land use for agriculture have severely exploited the regional groundwater resources. 
+        Intensive pumping has resulted in a rapid decline in the level of the water table as well as its quality. 
+        Better management practices and artificial recharge are needed for the development of sustainable groundwater resources. 
+        The objective of this study is to delineate the groundwater potential zones of this area using Remote Sensing (RS) and Geographic Information System (GIS) techniques.
+        Weighted overlay analysis was used to demarcate the groundwater potential zones. Various thematic layers such as geology, slope, soil, lineament density, drainage density, rainfall and land use maps were prepared. 
+        The final groundwater potential map was prepared by assigning appropriate weightage to different thematic maps and adding them to the final groundwater potential map. 
+        Maps of favorable groundwater potential recharge zones are helpful for planning and implementation of wells and hydraulic structures in this region.
+        </p>
+        <div class="seven col-sm-12" style="margin-top: 10px;">
+            <h1 id="INTRO">INTRODUCTION</h1>
+        </div>
+        <p>
+            Groundwater is the largest fresh water resource on the Earth, which makes it an important source for human consumption and the overall development of a region.
+            Mapping groundwater potential zones is essential for planning the location of new abstraction wells to meet the increasing demand for water. 
+            The occurrence, distribution, and movement of groundwater mainly depend upon the geological and hydro-geomorphological features of the area.
+            A detailed study of groundwater occurrences can be made by surface and subsurface investigation methods. 
+            High-resolution satellite imageries are widely used in groundwater studies due to their high spectral and spatial resolution. 
+            They are used to identify the geology, slope, soil, lineament density, drainage density, rainfall and landuse for maps that indicate the occurrence of groundwater. 
+            Population growth and the expansion of agricultural lands has mounted increasing pressure on groundwater resources, resulting in their overexploitation as well as a deteriorating in water quality. 
+            In Pakistan, the contribution of groundwater to overall irrigation water supply increased from 8% in 1960 to 60% in 2010 as a consequence of the continuous increase of lands under cultivation; 
+            the 2–3 m annual decline of the water table is due to continuous pumping of fresh aquifers to meet domestic and agriculture-related water demands. Much of the area under cultivation in the Punjab province of Pakistan is irrigated using groundwater withdrawn from dug wells and tube wells. 
+            The number of tube-wells installed here increased from 100,000 in 1975 to 800,000 in 2014. 
+            As the aquifer is unconfined in nature the increasing population and other anthropogenic activities pose an environmental risk. 
+            A careful assessment of the groundwater aquifer system is essential for its sustainable management. 
+            Potential groundwater recharge mapping can assist water resource managers to make better management plans.
+        </p>
+        <div class="seven col-sm-12" style="margin-top: 10px;">
+            <h1 id="Method">METHODOLOGY</h1>
+            <img style="width: 100%" src="./Images/Flow Chart.jpg">
+        </div>
         <!-------------------------------MAPS------------------------------------->
+        <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 style="margin-top: 50px;" id="AOI">DESCRIPTION OF STUDY AREA</h1>
+                </div>
+                <img class="col-md-6 col-sm-12" src="Images/RIVERS AND AOI 2.jpg">
+                <p class="col-md-6 col-sm-12">The study area is in Punjab which is the second largest 
+                    province of Pakistan. It occupies an area of about 205,344 km2, which is 25.8% of 
+                    the total land area of Pakistan. It extends between longitude 70°E–75°E and latitude 
+                    28°N–38°N, and its elevation decreases from 2271 m in the north to 46 m in the south. 
+                    The climate of this region shows a fluctuating trend in temperature and precipitation 
+                    with average values of 33 °C and 59 cm/yr., respectively. 
+                    The Indus River and five of its main tributaries – the Jhelum, Chenab, Ravi, 
+                    and Sutlej flow through this region. Many surface water channels including link canals 
+                    (which transport water from western rivers to eastern rivers), main canals, and their tributaries were constructed to irrigate agricultural crops in this region. 
+                    Punjab is among the more fertile provinces of Pakistan and is rich in groundwater resources;
+                    more than 80% of nationwide groundwater resources occur in this region. However, the rate of groundwater depletion is high in response to the rapid expansion of agricultural land, 
+                    increasing population growth, and widespread installation of private tube-wells. 
+                    Estimates suggest that groundwater, either alone or together with canal water, 
+                    accounts for approximately 69% of the water used to irrigate crops.</p>
+            </div>
+        </div>
+        <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="AOI">DRAINAGE DENSITY</h1>
+                </div>
+                <img class="col-md-6 col-sm-12" src="Images/Drainage Density.jpg">
+                <p class="col-md-6 col-sm-12">Drainage density helps to assess and understand the characteristics of runoff and groundwater infiltration in this area. 
+                    Drainage density (total length of drainage channels per unit area) values were calculated using the natural break method. 
+                    The regions were classified as low, medium and high drainage density zones. Areas with low drainage density indicate comparatively higher infiltration and low runoff. 
+                    The zones with low to moderate drainage density are considered excellent groundwater potential zones
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid" style=" color: #fff; justify-content: center; text-align: center; margin-top: 50px;">
+            <div style="justify-content: center; text-align: center;" class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="LAMINANT">LINEAMENT DENSITY</h1>
+                </div>
+                <img class="img-responsive center-block" style="width:70%; height:70%; justify-content: center; text-align: center;" src="Images/Lineament Density.jpg">
+            </div>
+        </div>
+        <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="RAIN">RAIN FALL</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="./Images/Rainfall.jpeg">
+                <p class="col-md-6 col-sm-12">Rainfall is a primary source of water for groundwater recharge in this area. 
+                    The IDW interpolation method was used to derive the rainfall distribution map. Based on the rainfall,
+                    the region was classified into nine zones, as shown in the map. 
+                    The central and northern parts of the study region receive comparatively more rainfall. 
+                    The highest annual rainfall of 242.08 mm was observed in the northern part of the study area. 
+                    Receiving more rainfall is favorable for the presence of more groundwater.</p>
+            </div>
+        </div>
         <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
             <div class="row">
                 <div class="seven col-sm-12">
                     <h1 id="SOIL">SOIL MAP</h1>
                   </div>
-                <img class="col-md-6 col-sm-12" src="Images/SoilMap.PNG">
+                <img class="col-md-6 col-sm-12" src="">
+                <div class="popup" onclick="myFunction()">
+                    <button style="position: relative; top: 130px; right: 415px; color: pink; background-color: rgba(255, 255, 255, 0); border-style: none;"><img style="width: 25px;" src="Icons/info.png"></button>
+                    <span style="width: auto; height: auto;" class="popuptext" id="myPopup"></span>
+                </div>
+                
                 <p class="col-md-6 col-sm-12">Good soil structure contributes to soil and plant health allowing water and air movement into and through the soil profile. Soil stores water for plant growth and supports machine and animal traffic.
 
                     While some soils are naturally better structured than others, some physical characteristics of soils can be changed with good management.
@@ -51,7 +146,7 @@
                 <div class="seven col-sm-12">
                     <h1 id="GEO">PUNJAB GEOLOGY</h1>
                   </div>
-                <img class="col-md-6 col-sm-12" src="Images/Geo.PNG">
+                <img class="col-md-6 col-sm-12" src="">
                 <p class="col-md-6 col-sm-12">Punjab is Pakistan's second largest province by area 
                     after Balochistan with an area of 205,344 square kilometres (79,284 square miles).
                     It occupies 25.8% of the total landmass of Pakistan.
@@ -66,7 +161,7 @@
                 <div class="seven col-sm-12">
                     <h1 id="ELEVATION">ELEVATION</h1>
                   </div>
-                <img class="col-md-6 col-sm-12" src="Images/Elevation.PNG">
+                <img class="col-md-6 col-sm-12" src="">
                 <p class="col-md-6 col-sm-12"></p>
             </div>
         </div>
@@ -75,7 +170,7 @@
                 <div class="seven col-sm-12">
                     <h1 id="SLOPE">SLOPE</h1>
                   </div>
-                <img class="col-md-6 col-sm-12" src="Images/Slope.PNG">
+                <img class="col-md-6 col-sm-12" src="">
                 <p class="col-md-6 col-sm-12"></p>
             </div>
         </div>
@@ -84,7 +179,7 @@
                 <div class="seven col-sm-12">
                     <h1 id="LAMINANT">LAMINANT DENSITY</h1>
                   </div>
-                <img class="col-md-6 col-sm-12" src="Images/Laminant.PNG">
+                <img class="col-md-6 col-sm-12" src="">
                 <p class="col-md-6 col-sm-12"></p>
             </div>
         </div>
@@ -93,7 +188,7 @@
                 <div class="seven col-sm-12">
                     <h1 id="LANDUSE">LANDUSE/LANDCOVER</h1>
                   </div>
-                <img class="col-md-6 col-sm-12" src="Images/landuse.PNG">
+                <img class="col-md-6 col-sm-12" src="">
                 <p class="col-md-6 col-sm-12"></p>
             </div>
         </div>
@@ -117,6 +212,10 @@
         function topFunction() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
         }
     </script>
 </html>
