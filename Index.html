@@ -10,21 +10,20 @@
 
         <div class="container-fluid" style="text-align: center;">
             <div class="row" style="text-align: center;">
-                <a href="#SOIL" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/soil (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: rgb(116, 26, 26);">SOILMAP</span></a>
-                <a href="#LANDUSE" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/land (1).png"><span style="position: relative; bottom: 35px; color: burlywood;">LANDUSE</span></a>
-                <a href="#GEO" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/earth (1).png"><span style="position: relative; bottom: 35px; color: orange;">GEOLOGY</span></a>
-                <a style="position:relative; left:20px" href="#LAMINANT" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/tectonic-plates (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: brown;">LINEAMENT</span></a>
+                <a href="#AOI" style="position: relative; right:40px;" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/area (1).png"><span style="position: relative; bottom: 35px; left: 3px; color: brown;">AREA</span></a>
+                <a href="#LANDUSE" style="position: relative; right:20px;" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/land (1).png"><span style="position: relative; bottom: 35px; right: 7px; color: burlywood;">LANDUSE</span></a>
+                <a href="#GEO" style="position: relative; right:10px;"  class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/earth (1).png"><span style="position: relative; bottom: 35px; color: orange;">GEOLOGY</span></a>
+                <a href="#SOIL" style="position: relative; left:17px;" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/soil (1).png"><span style="position: relative; bottom: 35px; left: 5px; color: rgb(116, 26, 26);">SOILMAP</span></a>
             </div>
         </div>
         <div class="container-fluid" style="text-align: center; margin-top: 20px;">
             <div class="row" style="text-align: center;">
-                <a href="#ELEVATION" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/contour (1).png"><span style="position: relative; bottom: 35px; right: 10px; color: rgb(252, 252, 252);">ELEVATION</span></a>
-                <a href="#SLOPE" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/mountains.png"><span style="position: relative; bottom: 35px; color: rgb(167, 161, 151);">SLOPE</span></a>
-                <a href="#AOI" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/area (1).png"><span style="position: relative; bottom: 35px; color: brown;">AREA</span></a>
+                <a style="position:relative; right:45px;" href="#LAMINANT" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/tectonic-plates (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: brown;">LINEAMENT</span></a>
+                <a href="#DRAIN" style="position: relative; right:25px;" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/drain.png"><span style="position: relative; bottom: 35px; color: rgb(167, 161, 151);">DRAINAGE</span></a>
+                <a href="#RAINFALL" style="position: relative; right: 10px;" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/rainfall.png"><span style="position: relative; bottom: 35px; left: 4px; color: rgb(252, 252, 252);">RAINFALL</span></a>
                 <a style="position: relative; left: 20px;" href="#GROUNDWATER" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/farming.png"><span style="position: relative; bottom: 35px; right: 13px; color: rgb(38, 172, 206);">GROUNDWATER</span></a>
             </div>
         </div>
-
         <!-------------------------------HEADING---------------------------------->
         <div style="margin-top: 100px;" class="nine">
             <h1>Identification of Groundwater Potential Zones using GIS/Remote Sensing Techniques and AHP</h1>
@@ -63,13 +62,15 @@
             <h1 id="Method">METHODOLOGY</h1>
             <img style="width: 100%" src="./Images/Flow Chart.jpg">
         </div>
+
+
         <!-------------------------------MAPS------------------------------------->
         <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
             <div class="row">
                 <div class="seven col-sm-12">
                     <h1 style="margin-top: 50px;" id="AOI">DESCRIPTION OF STUDY AREA</h1>
                 </div>
-                <img class="col-md-6 col-sm-12" src="Images/RIVERS AND AOI 2.jpg">
+                <img class="col-md-6 col-sm-12" src="Images/AOI.jpg">
                 <p class="col-md-6 col-sm-12">The study area is in Punjab which is the second largest 
                     province of Pakistan. It occupies an area of about 205,344 km2, which is 25.8% of 
                     the total land area of Pakistan. It extends between longitude 70°E–75°E and latitude 
@@ -86,17 +87,45 @@
                     accounts for approximately 69% of the water used to irrigate crops.</p>
             </div>
         </div>
+       
+        <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="LANDUSE">LANDUSE/LANDCOVER</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="./Images/landuse.jpg">
+                <p class="col-md-6 col-sm-12">
+                    The landuse and land cover map was prepared from the Landsat 8 satellite data using ArcGIS
+                     with supervised classification. 
+                     Landuse/Land cover patterns provide information about infiltration and runoff, 
+                     which are controlled by the nature of surface material. Landuse patterns such as Urban/built-up, 
+                     evergreen trees, croplands, barren land and shrub/grass were identified. 
+                    Croplands is the main occupation in this area.
+                </p>
+            </div>
+        </div>
         <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
             <div class="row">
                 <div class="seven col-sm-12">
-                    <h1 id="AOI">DRAINAGE DENSITY</h1>
+                    <h1 id="GEO">GEOLOGY</h1>
+                  </div>
+                <img class="col-md-6 col-sm-12" src="./Images/GEO.jpeg">
+                <p class="col-md-6 col-sm-12">Groundwater is the water found underground in the cracks and spaces in soil, 
+                    sand and rock. It is stored in and moves slowly through geologic formations of soil, 
+                    sand and rocks called aquifers. 
+                    That is why it is important to know what geological features make up our area and which have 
+                    higher infiltration rate.  Water fills the pores and fractures in underground materials such as sand, 
+                    gravel, and other rock, much the same way that water fills a sponge. 
+                    If groundwater flows naturally out of rock materials or if it can be removed by pumping 
+                    (in useful amounts), 
+                    the rock materials are called aquifers.</p>
+        </div>
+        <div class="container-fluid" style=" color: #fff; justify-content: center; text-align: center; margin-top: 50px;">
+            <div style="justify-content: center; text-align: center;" class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="SOIL">SOIL</h1>
                 </div>
-                <img class="col-md-6 col-sm-12" src="Images/Drainage Density.jpg">
-                <p class="col-md-6 col-sm-12">Drainage density helps to assess and understand the characteristics of runoff and groundwater infiltration in this area. 
-                    Drainage density (total length of drainage channels per unit area) values were calculated using the natural break method. 
-                    The regions were classified as low, medium and high drainage density zones. Areas with low drainage density indicate comparatively higher infiltration and low runoff. 
-                    The zones with low to moderate drainage density are considered excellent groundwater potential zones
-                </p>
+                <img class="img-responsive center-block" style="width:70%; height:70%; justify-content: center; text-align: center;" src="Images/SS.jpeg">
             </div>
         </div>
         <div class="container-fluid" style=" color: #fff; justify-content: center; text-align: center; margin-top: 50px;">
@@ -110,7 +139,21 @@
         <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
             <div class="row">
                 <div class="seven col-sm-12">
-                    <h1 id="RAIN">RAIN FALL</h1>
+                    <h1 id="DRAIN">DRAINAGE DENSITY</h1>
+                </div>
+                <img class="col-md-6 col-sm-12" src="Images/Drainage Density.jpg">
+                <p class="col-md-6 col-sm-12">Drainage density helps to assess and understand the characteristics of runoff and groundwater infiltration in this area. 
+                    Drainage density (total length of drainage channels per unit area) values were calculated using the natural break method. 
+                    The regions were classified as low, medium and high drainage density zones. Areas with low drainage density indicate comparatively higher infiltration and low runoff. 
+                    The zones with low to moderate drainage density are considered excellent groundwater potential zones
+                </p>
+            </div>
+        </div>
+        
+        <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="RAINFALL">RAIN FALL</h1>
                   </div>
                 <img class="col-md-6 col-sm-12" src="./Images/Rainfall.jpeg">
                 <p class="col-md-6 col-sm-12">Rainfall is a primary source of water for groundwater recharge in this area. 
@@ -124,69 +167,7 @@
         <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
             <div class="row">
                 <div class="seven col-sm-12">
-                    <h1 id="SOIL">SOIL MAP</h1>
-                  </div>
-                <img class="col-md-6 col-sm-12" src="">
-                <div class="popup" onclick="myFunction()">
-                    <button style="position: relative; top: 130px; right: 415px; color: pink; background-color: rgba(255, 255, 255, 0); border-style: none;"><img style="width: 25px;" src="Icons/info.png"></button>
-                    <span style="width: auto; height: auto;" class="popuptext" id="myPopup"></span>
-                </div>
-                
-                <p class="col-md-6 col-sm-12">Good soil structure contributes to soil and plant health allowing water and air movement into and through the soil profile. Soil stores water for plant growth and supports machine and animal traffic.
-
-                    While some soils are naturally better structured than others, some physical characteristics of soils can be changed with good management.
-                    
-                    It is important to monitor the physical characteristics of soil to understand soil condition.
-                    
-                    It is also important to ensure that management practices are not contributing to the decline of the soil. An example of this is excessive traffic causing compaction and reducing the amount of macropores, or spaces between the aggregates, therefore reducing the amount of air and water into and through the soil.</p>
-            </div>
-        </div>
-        <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
-            <div class="row">
-                <div class="seven col-sm-12">
-                    <h1 id="GEO">PUNJAB GEOLOGY</h1>
-                  </div>
-                <img class="col-md-6 col-sm-12" src="">
-                <p class="col-md-6 col-sm-12">Punjab is Pakistan's second largest province by area 
-                    after Balochistan with an area of 205,344 square kilometres (79,284 square miles).
-                    It occupies 25.8% of the total landmass of Pakistan.
-                    Punjab province is bordered by Sindh to the south, the province of Balochistan to
-                     the southwest, the province of Khyber Pakhtunkhwa to the west, and the Islamabad Capital 
-                     Territory and Azad Kashmir in the north. Punjab borders Jammu and Kashmir in the north, 
-                     and the Indian states of Punjab and Rajasthan to the east.</p>
-            </div>
-        </div>
-        <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
-            <div class="row">
-                <div class="seven col-sm-12">
                     <h1 id="ELEVATION">ELEVATION</h1>
-                  </div>
-                <img class="col-md-6 col-sm-12" src="">
-                <p class="col-md-6 col-sm-12"></p>
-            </div>
-        </div>
-        <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
-            <div class="row">
-                <div class="seven col-sm-12">
-                    <h1 id="SLOPE">SLOPE</h1>
-                  </div>
-                <img class="col-md-6 col-sm-12" src="">
-                <p class="col-md-6 col-sm-12"></p>
-            </div>
-        </div>
-        <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
-            <div class="row">
-                <div class="seven col-sm-12">
-                    <h1 id="LAMINANT">LAMINANT DENSITY</h1>
-                  </div>
-                <img class="col-md-6 col-sm-12" src="">
-                <p class="col-md-6 col-sm-12"></p>
-            </div>
-        </div>
-        <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
-            <div class="row">
-                <div class="seven col-sm-12">
-                    <h1 id="LANDUSE">LANDUSE/LANDCOVER</h1>
                   </div>
                 <img class="col-md-6 col-sm-12" src="">
                 <p class="col-md-6 col-sm-12"></p>

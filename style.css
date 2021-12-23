@@ -37,7 +37,7 @@ span{
       grid-gap: 20px;
       align-items: center;
   }
-  
+  .mySlides {display:none;}
   .seven h1:after,.seven h1:before {
       content: " ";
       display: block;
