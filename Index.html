@@ -21,7 +21,7 @@
                 <a style="position:relative; right:45px;" href="#LAMINANT" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/tectonic-plates (1).png"><span style="position: relative; bottom: 35px; right: 5px; color: brown;">LINEAMENT</span></a>
                 <a href="#DRAIN" style="position: relative; right:25px;" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/drain.png"><span style="position: relative; bottom: 35px; color: rgb(167, 161, 151);">DRAINAGE</span></a>
                 <a href="#RAINFALL" style="position: relative; right: 10px;" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/rainfall.png"><span style="position: relative; bottom: 35px; left: 4px; color: rgb(252, 252, 252);">RAINFALL</span></a>
-                <a style="position: relative; left: 20px;" href="#GROUNDWATER" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/farming.png"><span style="position: relative; bottom: 35px; right: 13px; color: rgb(38, 172, 206);">GROUNDWATER</span></a>
+                <a style="position: relative; left: 20px;" href="#GWP" class="button"><img style="width: 35px; align-items: center; position: relative; top: 0px;" src="Icons/farming.png"><span style="position: relative; bottom: 35px; right: 13px; color: rgb(38, 172, 206);">GROUNDWATER</span></a>
             </div>
         </div>
         <!-------------------------------HEADING---------------------------------->
@@ -167,10 +167,40 @@
         <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
             <div class="row">
                 <div class="seven col-sm-12">
-                    <h1 id="ELEVATION">ELEVATION</h1>
+                    <h1 id="GWP">GROUNDWATER POTENTIAL MAP</h1>
                   </div>
-                <img class="col-md-6 col-sm-12" src="">
-                <p class="col-md-6 col-sm-12"></p>
+                <img class="col-md-6 col-sm-12" src="./Images/Ground Water Potential.jpeg">
+                <p class="col-md-6 col-sm-12">The relative importance of various thematic layers and their 
+                    corresponding classes were used for generating the groundwater potential zone map. 
+                    The rank and weightage of individual thematic layers and the mean and 
+                    standard deviation of CSI for arriving at the groundwater potential map are given. 
+                    The groundwater potential zonation map prepared by this method. 
+                    The study area was classified into very high, high, moderate and low groundwater potential zones. 
+                    This study demonstrates the application of remote sensing and GIS techniques for integrating surface 
+                    and subsurface information in a rapid and cost-effective manner, 
+                    which may assist in locating sites for the development of groundwater well fields in the future.</p>
+            </div>
+        </div>
+        <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="GWP">ANALYTICAL HIERARCHY PROCESS</h1>
+                  </div>
+                <img class="col-md-12 col-sm-12" src="./Images/ahp1.jpg">
+                <img class="col-md-12 col-sm-12" src="./Images/ahp2.jpg">
+                <p class="col-md-12 col-sm-12">The integration method of weighted overlay analysis was 
+                    adopted to combine all thematic layers by assigning rank and weightage for each thematic 
+                    layer. Weighted overlay analysis is a simple method to analyze multiclass maps based on 
+                    the relative importance of each thematic layer and a layers class. Several studies have 
+                    reported the relative importance of various thematic layers that control the groundwater 
+                    potential in an area. The weight for the selected thematic maps was based on Saaty’s scale. 
+                    Higher weightage and ranks are given to the sites that are expected to have high groundwater potential. 
+                    The thematic layers were then integrated by weighted overlay analysis tool in ArcGIS. 
+                    The groundwater potential zone was prepared by delineating the study area into four classes: 
+                    very high, high, moderate and low. The Cumulative Score Index (CSI) was used for this classification. 
+                    CSI was calculated by multiplying the rank and weightage of each thematic layer as 
+                    expressed in the following equation. CSI = ∑ (Geology rank x weight + Slope rank x weight + Soil rank x weight, Lineament density rank x weight + Drainage density rank x weight + Rainfall rank x weight + Landuse rank x weight)
+                    </p>
             </div>
         </div>
     </body>
