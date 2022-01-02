@@ -161,9 +161,9 @@ p{
     background-color: rgba(226, 224, 224); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 5px; /* Some padding */
     border-radius: 5px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    font-size: 10px; /* Increase font size */
     font-style: italic;
   }
   
@@ -213,14 +213,14 @@ p{
   }
   
   /* Toggle this class - hide and show the popup */
-  .popup .show {
+  /* .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
-  }
+  } */
   
   /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
+  /* @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
     to {opacity: 1;}
   }
@@ -228,4 +228,39 @@ p{
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  } */
+
+  .close1,
+  .close2,
+  .close3,
+  .close4,
+  .close5,
+  .close6,
+  .close7,
+  .close8{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+
+  .close1:hover,
+  .close1:focus,
+  .close2:hover,
+  .close2:focus,
+  .close3:hover,
+  .close3:focus,
+  .close4:hover,
+  .close4:focus,
+  .close5:hover,
+  .close5:focus,
+  .close6:hover,
+  .close6:focus,
+  .close7:hover,
+  .close7:focus,
+  .close8:hover,
+  .close8:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
   }

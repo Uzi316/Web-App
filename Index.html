@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link type="text/css" rel="stylesheet" href="css/magiczoomplus.css"/>
     </head>
-    <body style="background-color: black;">
+
+    <body style="background-color: rgb(0, 0, 0);">
         <!-------------------------------BUTTONS---------------------------------->
 
         <div class="container-fluid" style="text-align: center;">
@@ -72,7 +73,38 @@
                     <h1 style="margin-top: 50px;" id="AOI">DESCRIPTION OF STUDY AREA</h1>
                 </div>
                 <img class="col-md-6 col-sm-12" src="Images/AOI.jpg" />
-                <a style="position: relative; right: 30px; top: 50px;" href="./Images/AOI.jpg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 45px; top:50px" src="./Icons/zoom.png"></a>
+                <a style="position: relative; right: 30px; top: 50px;" href="./Images/AOI.jpg" target="_blank">
+                    <img style="width: 30px; text-align: center; justify-content: center; position: relative; right: 45px; top:60px" src="./Icons/zoom.png">
+                </a>
+                <button class="map1" id="map1" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(-420%, 450%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(1)">
+                <img style="width: 9px; right: 180px; top: 200px" src="./Icons/info.png"></button>
+            <div id="modal1" class="map1" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content1" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;">
+                    <span class="close1">&times;</span>
+                    <img style="max-width: 100%; height: auto;" src="./Images/chenab.jpg">
+                    <p style="color: rgb(255, 255, 255);">The Chenab River is a major river that flows in India and Pakistan, and is one of the 5 major rivers of the Punjab region. It is 960 km long</p>
+                </div>
+            </div>
                 <p style="position: relative; bottom: 45px;" class="col-md-6 col-sm-12">The study area is in Punjab which is the second largest 
                     province of Pakistan. It occupies an area of about 205,344 km2, which is 25.8% of 
                     the total land area of Pakistan. It extends between longitude 70°E–75°E and latitude 
@@ -97,8 +129,37 @@
                     <h1 id="LANDUSE">LANDUSE/LANDCOVER</h1>
                   </div>
                 <img class="col-md-6 col-sm-12" src="./Images/landuse.jpg">
-                <a style="position: relative; right: 30px; top: 55px;" href="./Images/landuse.jpg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 45px; top:50px" src="./Icons/zoom.png"></a>
-                <p  style="position: relative; bottom: 45px;" class="col-md-6 col-sm-12">
+                <a style="position: relative; right: 30px; top: 55px;" href="./Images/landuse.jpg" target="_blank"><img style="width: 30px; text-align: center; justify-content: center; position: relative; right: 45px; top:60px" src="./Icons/zoom.png">
+                </a>
+                <button class="map2" id="map2" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(-530%, 750%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(2)">
+                <img style="width: 15px; right: 90px; top:100px" src="./Icons/info.png"></button>
+            <div id="modal2" class="map2" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content2" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 70%;">
+                    <span class="close2">&times;</span>
+                    <img style="max-width: 100%; height: auto;" src="./Images/cropland.jpg">
+                </div>
+            </div>
+                <p style="position: relative; bottom: 45px;" class="col-md-6 col-sm-12">
                     The landuse and land cover map was prepared from the Landsat 8 satellite data using ArcGIS
                      with supervised classification. 
                      Landuse/Land cover patterns provide information about infiltration and runoff, 
@@ -114,7 +175,36 @@
                     <h1 id="GEO">GEOLOGY</h1>
                   </div>
                 <img class="col-md-6 col-sm-12" src="./Images/GEO.jpeg">
-                <a style="position: relative; right: 30px; top: 50px;" href="./Images/GEO.jpeg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 50px; top:50px" src="./Icons/zoom.png"></a>
+                <a style="position: relative; right: 30px; top: 50px;" href="./Images/GEO.jpeg" target="_blank"><img style="width: 30px; text-align: center; justify-content: center; position: relative; right: 60px; top: 60px;" src="./Icons/zoom.png">
+                </a>
+                <button class="map3" id="map3" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(-820%, 650%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(3)">
+                <img style="width: 15px; right: 90px; top:100px" src="./Icons/info.png"></button>
+            <div id="modal3" class="map3" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content3" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;">
+                    <span class="close3">&times;</span>
+                    <p style="color: rgb(255, 255, 255);" >The Neogene is a geologic period and system that spans 20.45 million years from the end of the Paleogene Period.</p>
+                </div>
+            </div>
                 <p style="position: relative; bottom: 45px;" class="col-md-6 col-sm-12">Groundwater is the water found underground in the cracks and spaces in soil, 
                     sand and rock. It is stored in and moves slowly through geologic formations of soil, 
                     sand and rocks called aquifers. 
@@ -131,7 +221,37 @@
                     <h1 id="SOIL">SOIL</h1>
                 </div>
                 <img class="img-responsive center-block" style="width:70%; height:70%; justify-content: center; text-align: center;" src="Images/SS.jpeg"> 
-                <a style="position: relative; bottom: 510px; left: 395px;" href="./Images/SS.jpeg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 45px; top:50px" src="./Icons/zoom.png"></a>
+                <a style="position: relative; bottom: 510px; left: 395px;" href="./Images/SS.jpeg" target="_blank"><img style="width: 30px; text-align: center; justify-content: center; position: relative; right: -38px; top:-60px" src="./Icons/zoom.png">
+                </a>
+                <button class="map4" id="map4" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(1250%, -2050%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(4)">
+                <img style="width: 15px; right: 90px; top:100px" src="./Icons/info.png"></button>
+            <div id="modal4" class="map4" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content4" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 70%;">
+                    <span class="close4">&times;</span>
+                    <img style="max-width: 100%; height: auto;" src="./Images/fluvisol.png">
+                    <p style="color: rgb(255, 255, 255);" >The fluvisols are soil units that occur mainly in the central part of the project area and are characterized by stratification of layers of different texture, the surface layer being predominantly clay loam to sandy clay loam.</p>
+                </div>
+            </div>
             </div>
         </div>
         <div class="container-fluid" style=" color: #fff; justify-content: center; text-align: center; margin-top: 50px;">
@@ -140,7 +260,36 @@
                     <h1 id="LAMINANT">LINEAMENT DENSITY</h1>
                 </div>
                 <img class="img-responsive center-block" style="width:70%; height:70%; justify-content: center; text-align: center;" src="Images/Lineament Density.jpg">
-                <a style="position: relative; bottom: 505px; left: 394px;" href="./Images/Lineament Density.jpg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 45px; top:50px" src="./Icons/zoom.png"></a>
+                <a style="position: relative; bottom: 505px; left: 394px;" href="./Images/Lineament Density.jpg" target="_blank"><img style="width: 30px; text-align: center; justify-content: center; position: relative; right: -38px; top:-60px" src="./Icons/zoom.png">
+                </a>
+                <button class="map5" id="map5" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(1200%, -1750%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(5)">
+                <img style="width: 15px; right: 90px; top:100px" src="./Icons/info.png"></button>
+            <div id="modal5" class="map5" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content5" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 70%;">
+                    <span class="close5">&times;</span>
+                    <p style="color: rgb(255, 255, 255);" >A lineament is a linear feature in a landscape which is an expression of an underlying geological structure such as a fault. Typically a lineament will appear as a fault-aligned valley, a series of fault or fold-aligned hills, a straight coastline or indeed a combination of these features.</p>
+                </div>
+            </div>
             </div>
         </div>
         <div class="container-fluid" style=" color: #fff; height:auto; width: 100%; margin-top: 50px;">
@@ -149,7 +298,36 @@
                     <h1 id="DRAIN">DRAINAGE DENSITY</h1>
                 </div>
                 <img class="col-md-6 col-sm-12" src="./Images/Drainage Density.jpg">
-                <a style="position: relative; right: 30px; top: 160px;" href="./Images/Drainage Density.jpg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 50px; top:50px" src="./Icons/zoom.png"></a>
+                <a style="position: relative; right: 30px; top: 160px;" href="./Images/Drainage Density.jpg" target="_blank"><img style="width: 25px; text-align: center; justify-content: center; position: relative; right: 60px; top:-45px" src="./Icons/zoom.png">
+                </a>
+                <button class="map6" id="map6" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(140%, 600%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(6)">
+                <img style="width: 15px; right: 90px; top:100px" src="./Icons/info.png"></button>
+            <div id="modal6" class="map6" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content6" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 70%;">
+                    <span class="close6">&times;</span>
+                    <p style="color: rgb(255, 255, 255);">Drainage density is a measurement of the sum of the channel lengths per unit area. It is generally expressed in terms of miles of channel per square mile.</p>
+                </div>
+            </div>
                 <p style="position: relative; bottom: 45px;" class="col-md-6 col-sm-12">Drainage density helps to assess and understand the characteristics of runoff and groundwater infiltration in this area. 
                     Drainage density (total length of drainage channels per unit area) values were calculated using the natural break method. 
                     The regions were classified as low, medium and high drainage density zones. Areas with low drainage density indicate comparatively higher infiltration and low runoff. 
@@ -164,7 +342,37 @@
                     <h1 id="RAINFALL">RAIN FALL</h1>
                 </div>
                 <img class="col-md-6 col-sm-12" src="./Images/Rainfall.jpeg">
-                <a style="position: relative; right: 30px; top: 130px;" href="./Images/Rainfall.jpeg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 50px; top:50px" src="./Icons/zoom.png"></a>
+                <a style="position: relative; right: 30px; top: 130px;" href="./Images/Rainfall.jpeg" target="_blank"><img style="width: 30px; text-align: center; justify-content: center; position: relative; right: 60px; top:-25px" src="./Icons/zoom.png">
+                </a>
+                <button class="map7" id="map7" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(-100%, 680%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(7)">
+                <img style="width: 15px; right: 90px; top:100px" src="./Icons/info.png"></button>
+            <div id="modal7" class="map7" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content7" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 70%;">
+                    <span class="close7">&times;</span>
+                        <img style="max-width: 100%; height: auto;" src="./Images/Weather_Radar.jpg">
+                    <p style="color: rgb(255, 255, 255);">Regional Meteorological Center(RMC), 46-Jail road Lahore.</p>
+                </div>
+            </div>
                 <p style="position: relative; bottom: 45px;"  class="col-md-6 col-sm-12">Rainfall is a primary source of water for groundwater recharge in this area. 
                     The IDW interpolation method was used to derive the rainfall distribution map. Based on the rainfall,
                     the region was classified into nine zones, as shown in the map. 
@@ -180,6 +388,7 @@
                   </div>
                 <img class="col-md-6 col-sm-12" src="./Images/ahp1.jpg">
                 <img class="col-md-6 col-sm-12" style="height: 760px;" src="./Images/ahp2.jpg">
+                <img style="align-items: flex-end; width: 45%; margin: 15px;" src="./Images/Formula.jpeg">
                 <p class="col-md-12 col-sm-12">The integration method of weighted overlay analysis was 
                     adopted to combine all thematic layers by assigning rank and weightage for each thematic 
                     layer. Weighted overlay analysis is a simple method to analyze multiclass maps based on 
@@ -191,12 +400,22 @@
                     The groundwater potential zone was prepared by delineating the study area into four classes: 
                     very high, high, moderate and low. The Cumulative Score Index (CSI) was used for this classification. 
                     CSI was calculated by multiplying the rank and weightage of each thematic layer as 
-                    expressed in the following equation. CSI = ∑ (Geology rank x weight + Slope rank x weight + Soil rank x weight, Lineament density rank x weight + Drainage density rank x weight + Rainfall rank x weight + Landuse rank x weight)
-                    </p>
-                    <div style="text-align: center; width: 100%; margin: auto;">
-                        <img src="./Images/Formula.jpeg">
-                    </div>
-                    
+                    expressed in the following equation. Where, Wj is the normalized weight of the jth factor; Xi
+                    is the rank of 
+                   the ith classes/features of a thematic layer; m is the total number of thematic layers; and n is the total number of classes/features in a thematic layer
+                    <ul>
+                    <li>Cumulative Score Index = CSI</li>
+                    <li>Geology Rank = GR</li>
+                    <li>Slope Rank = SLR</li>
+                    <li>Soil Rank = SR</li>
+                    <li>Lineament Density Rank = LDR</li> 
+                    <li>Drainage Density Rank = DDR </li>
+                    <li>Rainfall Rank = RR</li>
+                    <li>Landuse Rank = LR</li>
+                    <li>Weight = w</li>
+                    </ul>
+                    $${CSI = \int_{i=1}^{n} . \int_{j=1}^{m} (GR\times w + SLR\times w + SR\times w + LDR\times w + DDR\times w + RR\times w+ LR\times w)}$$
+                </p>
             </div>
         </div>
         <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
@@ -205,7 +424,38 @@
                     <h1 id="GWP">GROUNDWATER POTENTIAL MAP</h1>
                   </div>
                   <img class="col-md-6 col-sm-12" src="./Images/Ground Water Potential.jpeg">
-                  <a style="position: relative; right: 30px; top: 45px;" href="./Images/Ground Water Potential.jpeg" target="_blank"><img style="width: 40px; text-align: center; justify-content: center; position: relative; right: 50px; top:50px" src="./Icons/zoom.png"></a>
+                  <a style="position: relative; right: 30px; top: 45px;" href="./Images/Ground Water Potential.jpeg" target="_blank"><img style="width: 25px; text-align: center; justify-content: center; position: relative; right: 60px; top: 70px" src="./Icons/zoom.png">
+                </a>
+                <button class="map8" id="map8" style="position: relative;
+                top: -55%;
+                left: -10%;
+                bottom: 10%;
+                z-index: 1;
+                transform: translate(-600%, 480%);
+                -ms-transform: translate(-50%, -50%);" onclick="popupfunc(8)">
+                <img style="width: 15px; right: 90px; top:100px" src="./Icons/info.png"></button>
+            <div id="modal8" class="map8" style="display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 800px;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0);">
+                <div class="model-content8" style="  background-color: #000000;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 70%;">
+                    <span class="close8">&times;</span>
+                    <img style="max-width: 100%; height: auto;" src="./Images/groundwater.jpg">
+                    <p style="color: rgb(255, 255, 255);">What is abstraction of groundwater?
+                        Groundwater abstraction is the process of taking water from a ground source, either temporarily or permanently. Most water is used for irrigation or treatment to produce drinking water. Abstraction wells are the major hydraulic structures for groundwater abstraction from aquifers.</p>
+                </div>
+            </div>
                 <p style="position: relative; bottom: 45px;" class="col-md-6 col-sm-12">The relative importance of various thematic layers and their 
                     corresponding classes were used for generating the groundwater potential zone map. 
                     The rank and weightage of individual thematic layers and the mean and 
@@ -218,38 +468,44 @@
             </div>
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="50px" src="Icons/up-arrow.png"></button>
+        <div class="container-fluid" style="color: #fff; height:auto; width: 100%; margin-top: 50px;">
+            <div class="row">
+                <div class="seven col-sm-12">
+                    <h1 id="ref">REFERENCES</h1>
+                <p style="text-align: left;">
+                    <ol>
+                    <li>S. Khattak, “Demarcation of groundwater potential zones by electrical resistivity survey (ers)
+                        Islamabad, Pakistan,” vol. 9, pp. 39–44, 01 2019.</li>
+                    <li>A. Qadir, M. R. Amjad, T. Khan, M. Zafar, M. Hasham, U. A. Khan, S. A. Khattak, and
+                        I. Ahmad, “Demarcation of groundwater potential zones by electrical resistivity survey (ers)
+                        Islamabad, Pakistan,” International Journal of Economic and Environmental Geology, vol. 9,
+                        no. 4, pp. 39–44, 2018.</li>
+                    <li>A. Sarwar, S. R. Ahmad, M. I. A. Rehmani, M. Asif Javid, S. Gulzar, M. A. Shehzad,
+                        J. Shabbir Dar, A. Baazeem, M. A. Iqbal, M. H. U. Rahman, M. Skalicky, M. Brestic, and
+                        A. EL Sabagh, “Mapping groundwater potential for irrigation, by geographical information
+                        system and remote sensing techniques: A case study of district Lower Dir, Pakistan,” Atmosphere,
+                        vol. 12, no. 6, 2021. [Online]. Available:https://www.mdpi.com/2073-4433/12/6/669</li>
+                    <li>M. J. Nasir, S. Khan, H. Zahid, and A. Khan, “Delineation of groundwater potential zones using
+                        gis and multi influence factor (mif) techniques: a study of district Swat, Khyber Pakhtunkhwa,
+                        Pakistan,” Environmental Earth Sciences, vol. 77, no. 10, pp. 1–11, 2018.</li>
+                    <li>A. Arshad, Z. Zhang, W. Zhang, and A. Dilawar, “Mapping favorable groundwater
+                        potential recharge zones using a gis-based analytical hierarchical process and probability
+                        frequency ratio model: A case study from an agro-urban region of Pakistan,”
+                        Geoscience Frontiers, vol. 11, no. 5, pp. 1805–1819, 2020. [Online]. Available:https://www.sciencedirect.com/science/article/pii/S1674987120300396</li>
+                    <li>M. Amin et al., “Pakistan’s groundwater reservoir and its sustainability,” Proceedings 2nd ICID
+                        Asian Regional, 2004.</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="25px" src="Icons/up-arrow.png"></button>
         
     </body>
-    <script type="text/javascript" src="js/magiczoomplus.js"></script>
+    <!-- <script type="text/javascript" src="js/magiczoomplus.js"></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <script src="index.js"></script>
 
-    <script>
-        //Get the button:
-        mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-        function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-        }
-        $(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
-});
-    </script>
 </html>
 
     
